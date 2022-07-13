@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <style type="text/css">
+        body{
+
+                background-color:whitesmoke;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                overflow: hidden;
+                background-color: orangered;
+                text-align: right;
+            }
+            li {
+              float: left;
+              padding:10px 30px;
+              margin-left:-80px;
+            }
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 10px 75px;
+              text-decoration: none;
+             }
+             li a:hover {
+               background-color: #111111;
+             }
+             #main {
+                width: 600px;
+                height: 400px;
+                margin: 0 auto;
+                margin-top: 20px;
+                color: black;
+                animation-name: slide;
+                animation-direction: normal;
+                animation-duration: 2s;
+                animation-delay: .5s;
+                animation-fill-mode: backwards;
+             }
+             #main h1{
+                padding: 10px 55px;
+                animation-name: slide;
+                animation-duration: 2s;
+             }
+             @keyframes slide{
+                0%{
+                    transform: translateX(1000px);
+                    opacity: 0;
+                }
+                100%{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+             }
+
+            .image{
+                display: block;
+                width: 100%;
+                margin-left:auto;
+                margin-right: auto;
+            }
+            body p{
+                text-align: center;
+            }
+
+            .container,.container1,.container2,.container3 {
+            position: relative;
+            width: 500px;
+            margin-left: 30px;
+        }
+
+.image1,.image2,.image3,.image4,.image5{
+  opacity: 1;
+  display: block;
+  width: 0;
+  height: 200px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle,.middle1,.middle2,.middle3,.middle4 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-0.5%, -0.5%);
+  -ms-transform: translate(-0.5%, -0.5%);
+  text-align: left;
+}
+
+.container:hover .image1,.container1:hover .image2, .container2:hover .image3, .container3:hover .image4,.container4:hover .image5 {
+  opacity: 0.3;
+}
+
+.container:hover .middle, .container1:hover .middle1, .container2:hover .middle2, .container3:hover.middle3,.container4:hover.middle4 {
+  opacity: 1;
+}
+
+.text {
+  background-color: lime;
+  color: white;
+  font-size: 10px;
+  padding: 16px 32px;
+}
+.container,.container1,.container2,.container3,.container4{
+    float: left;
+}
+
+
+        </style>
+    </head>
+    <body>
+                    <img class="image" src="1.jpg">
+                  <ul id='Main Menu'>
+
+                        <li><a href="logout.php" target="_self">LogOut</a></li>
+                    </ul>
+
+		      <div class="container">
+                      <img src="cse.jpg" alt="Avatar" class="image1" style="width:100%">
+                      <div class="middle">
+                          <h1>CSE</h1>
+                      </div>
+                      </div>
+                      <br><br>
+                      <div class="container1">
+                        <img src="ece.jpg" alt="Avatar" class="image2" style="width:100%">
+                        <div class="middle1">
+                            <h1>ECE</h1>
+                          </div>
+                      </div>
+                      <br><br>
+                      <div class="container2"><img src="eee.jpg" alt="Avatar" class="image3" style="width:100%">
+                        <div class="middle2">
+                            <h1>EEE</h1>
+                          </div>
+                        </div></div>
+                        <br><br>
+                      <div class="container3">
+                        <img src="civil.jpg" alt="Avatar" class="image4" style="width:100%">
+                        <div class="middle3">
+                            <h1>Civil</h1>
+
+                        </div>
+                    </div>
+ 			<div class="container4">
+                        <img src="mech.jpg" alt="Avatar" class="image5" style="width:100%">
+                        <div class="middle4">
+                            <h1>Mechanical</h1>
+
+                        </div>
+                    </body>
+</html>
+

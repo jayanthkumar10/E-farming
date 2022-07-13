@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Step Progress Bar</title>
+    <link rel="stylesheet" href="progress.css">
+
+    <!-- UniIcon CDN Link  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        body{
+            background-image: url('./PBar.jpeg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .boxx{
+            background-color: #fff;
+            padding: 5rem 3rem;
+            border-radius: 12px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="boxx">
+
+            <div class="head">
+                <p class="head_1">CROP <span>Progress Bar</span></p>
+                <p class="head_2">powered by AGREECULTURE</p>
+            </div>
+    
+            <ul>
+                <li>
+                   
+    
+                    <i class="icon uil uil-bars" ></i>
+                    <div class="progress one"> 
+                        <p onclick="myFunction()">1</p>
+                        <i class="uil uil-check" ></i>
+                    </div>
+                    <p class="text">Selection of crop</p>
+                   
+
+                    <p id="demo"></p>
+
+                   
+
+                   <script>
+                   function myFunction() {
+                    document.getElementById("demo").innerHTML = "You Have Succesfully Selected a crop <br> Please go ahead";
+                     }
+                    </script>
+                </li>
+                <li>
+                    <i class="icon uil uil-cloud-drizzle"></i>
+                    <div class="progress two">
+                        <p onclick="myFunction()">2</p>
+                        <i class="uil uil-check"></i>
+                    </div>
+                    <p class="text">Soil Preparation and Sowing</p>
+                    
+                </li>
+                <li>
+                    <i class="icon uil uil-wheel-barrow"></i>
+                    <div class="progress three">
+                        <p onclick="myFunction()">3</p>
+                        <i class="uil uil-check"></i>
+                    </div>
+                    <p class="text">Manuring</p>
+                   
+                </li>
+                <li>
+                    <i class="icon uil uil-pagelines"></i>
+                    <div class="progress four">
+                        <p onclick="myFunction()" >4</p>
+                        <i class="uil uil-check"></i>
+                    </div>
+                    <p class="text">Irrigation</p>
+                    
+                </li>
+                <li>
+                    <i class="icon uil uil-store-alt"></i>
+                    <div class="progress five">
+                        <p onclick="myFunction()" >5</p>
+                        <i class="uil uil-check"></i>
+                    </div>
+                    <p class="text">Harvesting & Storage</p>
+                    
+                    
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="progress.js"></script>
+</body>
+</html>
+

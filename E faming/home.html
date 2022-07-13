@@ -1,0 +1,103 @@
+<html>
+    <head>
+        
+        <title>Home Page</title>
+        <style type="text/css">
+        body{
+                background-image: url('home_bg.png');
+                background-repeat: no-repeat; 
+                background-size: cover;
+                height: 500px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color:#416600 ;
+                text-align: right;
+                opacity: 0.8;
+            }
+            li {
+              float: left;
+              padding:5px 100px;
+            }
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 10px 60px;
+              text-decoration: none;
+             }
+             li a:hover {
+               background-color: #111111;
+             }
+             #main {
+                width: 700px;
+                height: 400px;
+                margin: 0 auto;
+                margin-top: 30px;
+                color: beige;
+                animation-name: slide;
+                animation-direction: normal;
+                animation-duration: 2s;
+                animation-delay: .5s;
+                animation-fill-mode: backwards;
+             }
+             #main h1{
+                padding: 90px 50px;
+                animation-name: slide;
+                animation-duration: 2s;
+             }
+             @keyframes slide{
+                0%{
+                    transform: translateX(1000px);
+                    opacity: 0;
+                }
+                100%{
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+             }
+            footer {
+                text-align: center;
+                 color: rgb(11, 11, 10);
+                 animation-name: slide;
+                animation-duration: 2s;
+                animation-delay: .5s;
+                animation-fill-mode: backwards;
+                }
+            footer h3{
+                margin:10%;
+                animation-name: slide;
+                animation-duration: 2s;
+                color: rgb(11, 11, 10);
+            }
+
+            img{
+                height: 150px;
+                margin-left: -400px;
+                margin-top: -100px;
+            }
+
+        </style>
+    </head>
+    <body>
+                  <ul id='Main Menu'>
+                        <li><a href="Home.html" target="_self">Home</a></li>
+                        <li><a href="#" target="_self">Revision Material</a></li>
+                        <li><a href="logout.php" target="_blank">Log Out</a></li>
+                    </ul>
+                    <div id="main">
+                        <h1> <img src="0.png"></h1>
+                        
+                    </div>
+                    <footer>
+                        <h3>😊 HAPPY LEARNING 😊</h3>
+                       </footer>
+                    
+    </body>
+</html>
